@@ -2,6 +2,77 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Привет мир");
+        //Задача 1
+        int[] weights = new int[]{1, 2, 3};
+        double[] numbers = {1.57, 7.654, 9.986};
+        int[] myNumbers = {12, 48, 98, 102, 312};
+        //Задача 2
+        for (int i = 0; i < weights.length; i++) {
+            if (i == weights.length - 1) {
+                System.out.println(weights[i]);
+                break;
+            }
+            System.out.print(weights[i] + ", ");
+        }
+
+        System.out.println();
+
+
+        for (int u = 0; u < numbers.length; u++) {
+            if (u == numbers.length - 1) {
+                System.out.println(numbers[u]);
+                break;
+            }
+            System.out.print(numbers[u] + ", ");
+
+        }
+
+        System.out.println();
+
+        for (int c = 0; c < myNumbers.length; c++) {
+            if (c == myNumbers.length - 1) {
+                System.out.println(myNumbers[c]);
+                break;
+            }
+            System.out.print(myNumbers[c] + ", ");
+        }
+
+        System.out.println();
+
+        //Задача 3
+        for (int u = weights.length - 1; u >= 0; u--) {
+            System.out.print(weights[u]);
+            if (u != 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+
+        for (int q = numbers.length - 1; q >= 0; q--) {
+            System.out.print(numbers[q]);
+            if (q != 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+
+        for (int t = myNumbers.length - 1; t >=0; t--) {
+            System.out.print(myNumbers[t]);
+            if (t != 0) {
+                System.out.print(", ");
+            }
+        }
+
+        System.out.println();
+
+        //Задача 4
+        for (int z = 0; z < weights.length; z++ ) {
+            if (weights[z] % 2 != 0) {
+                weights[z]++;
+            }
+            if (z!=0) {
+                System.out.print(weights[z] + " ");
+            }
         }
     }
+}
