@@ -66,12 +66,12 @@ public class Main {
         System.out.println();
 
         //Задача 4
-        for (int z = 0; z < weights.length; z++ ) {
-            if (weights[z] % 2 != 0) {
-                weights[z]++;
+        for (int v = 0; v < weights.length; v++ ) {
+            if (weights[v] % 2 != 0) {
+                weights[v]++;
             }
-            if (z!=0) {
-                System.out.print(weights[z] + " ");
+            if (v!=0) {
+                System.out.print(weights[v] + " ");
             }
         }
     }
